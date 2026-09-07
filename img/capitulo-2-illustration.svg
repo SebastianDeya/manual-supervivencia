@@ -1,0 +1,47 @@
+<svg viewBox="0 0 420 320" xmlns="http://www.w3.org/2000/svg">
+  <rect x="4" y="4" width="412" height="312" fill="#f4efe4"/>
+
+  <circle cx="150" cy="160" r="104" fill="#2f5d4f" opacity="0.13"/>
+
+  <g opacity="0.5">
+    <circle cx="370" cy="30" r="2.2" fill="#1c1a17"/>
+    <circle cx="388" cy="30" r="2.2" fill="#1c1a17"/>
+    <circle cx="370" cy="46" r="2.2" fill="#1c1a17"/>
+    <circle cx="388" cy="46" r="2.2" fill="#1c1a17"/>
+  </g>
+
+  <g transform="translate(140,170)">
+    <rect x="-38" y="-90" width="76" height="180" rx="3" fill="#fffdf7" stroke="#1c1a17" stroke-width="4"/>
+    <rect x="-38" y="-90" width="14" height="180" fill="#1c1a17" opacity="0.08"/>
+    <path d="M38 -70 C 70 -40 70 40 38 70" fill="none" stroke="#1c1a17" stroke-width="4" stroke-linecap="round" opacity="0.35"/>
+    <circle cx="-10" cy="0" r="4" fill="#ff5a3c"/>
+  </g>
+
+  <g stroke="#1c1a17" stroke-width="3" stroke-linecap="round" fill="none">
+    <path d="M180 170 C 230 120 260 130 300 90" marker-end="url(#arrow1)"/>
+    <path d="M180 170 C 230 190 260 210 300 230" marker-end="url(#arrow1)"/>
+    <path d="M180 170 C 240 165 270 160 310 160" marker-end="url(#arrow1)"/>
+  </g>
+
+  <defs>
+    <marker id="arrow1" markerWidth="10" markerHeight="10" refX="6" refY="5" orient="auto">
+      <path d="M0 0 L8 5 L0 10 Z" fill="#1c1a17"/>
+    </marker>
+  </defs>
+
+  <g transform="translate(310,90) rotate(-10)">
+    <rect x="-20" y="-14" width="40" height="28" fill="#ff5a3c" stroke="#1c1a17" stroke-width="3"/>
+  </g>
+  <g transform="translate(320,230) rotate(8)">
+    <circle r="18" fill="#f4efe4" stroke="#1c1a17" stroke-width="3"/>
+    <path d="M-7 0 h14 M0 -7 v14" stroke="#1c1a17" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(330,160)">
+    <polygon points="-16,-14 16,0 -16,14" fill="#2f5d4f" stroke="#1c1a17" stroke-width="3" stroke-linejoin="round"/>
+  </g>
+
+  <g transform="translate(150,270) rotate(-4)">
+    <circle r="10" fill="none" stroke="#1c1a17" stroke-width="3"/>
+    <path d="M6 6 l8 8" stroke="#1c1a17" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>
