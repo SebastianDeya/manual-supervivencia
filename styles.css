@@ -32,6 +32,76 @@ body {
 
 a { color: inherit; }
 
+/* ---------- SITE HEADER / LOGO ---------- */
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 1rem 1.25rem;
+  border-bottom: 4px solid var(--line);
+  background: var(--paper);
+  text-decoration: none;
+}
+
+.site-nav__mark {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid var(--line);
+  background: #0b0b0a;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.site-nav__mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.site-nav__word {
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  line-height: 1.1;
+}
+
+.chapter-stamp {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  border: 3px solid var(--line);
+  background: #0b0b0a;
+  overflow: hidden;
+  flex-shrink: 0;
+  transform: rotate(-6deg);
+  box-shadow: 4px 4px 0 var(--ink);
+}
+
+.chapter-stamp img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.chapter-quote-row {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+.chapter-quote-row .chapter-quote {
+  margin: 0;
+  flex: 1;
+  min-width: 220px;
+}
+
 /* ---------- HERO ---------- */
 
 .hero {
@@ -598,6 +668,86 @@ a { color: inherit; }
   margin-top: 0.4rem;
   color: #7a7261 !important;
   font-size: 0.75rem !important;
+}
+
+/* ---------- STICKERS ---------- */
+
+.sticker {
+  position: absolute;
+  pointer-events: none;
+  z-index: 3;
+  filter: drop-shadow(3px 3px 0 rgba(28,26,23,0.25));
+}
+
+.hero, .chapters, .share, .chapter-hero, .chapter-content, footer.footer {
+  position: relative;
+}
+
+.sticker--hero-1 {
+  top: 34%;
+  left: 2%;
+  width: 70px;
+  transform: rotate(-12deg);
+}
+
+.sticker--hero-2 {
+  bottom: 6%;
+  right: 3%;
+  width: 60px;
+  transform: rotate(10deg);
+}
+
+.sticker--chapters-1 {
+  top: -10px;
+  right: 2%;
+  width: 64px;
+  transform: rotate(8deg);
+}
+
+.sticker--chapters-2 {
+  bottom: 4%;
+  left: 1.5%;
+  width: 90px;
+  transform: rotate(-6deg);
+}
+
+.sticker--share-1 {
+  top: 10%;
+  right: 3%;
+  width: 68px;
+  transform: rotate(-9deg);
+}
+
+.sticker--share-2 {
+  bottom: 8%;
+  left: 2.5%;
+  width: 56px;
+  transform: rotate(14deg);
+}
+
+.sticker--cp-1 {
+  top: 6%;
+  left: 1.5%;
+  width: 60px;
+  transform: rotate(-10deg);
+}
+
+.sticker--cp-2 {
+  top: 40%;
+  right: 1.5%;
+  width: 58px;
+  transform: rotate(7deg);
+}
+
+.sticker--footer-1 {
+  top: 12%;
+  right: 2%;
+  width: 54px;
+  transform: rotate(-8deg);
+}
+
+@media (max-width: 1200px) {
+  .sticker { display: none; }
 }
 
 /* ---------- SCROLL REVEAL ---------- */
